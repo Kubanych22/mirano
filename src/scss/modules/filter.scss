@@ -54,15 +54,15 @@
     }
 
     &_flower {
-      background-image: url('./img/flowers.png');
+      background-image: url('/img/flowers.png');
     }
 
     &_toys {
-      background-image: url('./img/bear-toy.png');
+      background-image: url('/img/bear-toy.png');
     }
 
     &_postcard {
-      background-image: url('./img/postcard.png');
+      background-image: url('/img/postcard.png');
     }
 
     &:hover {

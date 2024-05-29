@@ -3,7 +3,7 @@ export const debounce = (fn, msec) => {
 
 
   return (...args) => {
-    clearInterval(idTimeout);
+    clearTimeout(idTimeout);
     idTimeout = setTimeout(() => {
       fn(...args)
     }, msec);
