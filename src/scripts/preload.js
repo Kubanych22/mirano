@@ -3,7 +3,6 @@ export const callBackWithPreload = async (elem, cb, ...params) => {
   preload.classList.add('preload');
   
   elem.append(preload);
-  elem.style.position = 'relative';
   preload.style.display = 'flex';
   
   try {
