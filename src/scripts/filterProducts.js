@@ -21,12 +21,11 @@ export const filterProducts = () => {
     
     productStore.fetchProducts()
     callBackWithPreload(goodsSection, productStore.fetchProducts(), params)
-    // fetchProducts(params);
   };
   
   applyFilters();
   
-  const apllyPriceFilters = debounce(applyFilters, 500);
+  const  apllyPriceFilters = debounce(applyFilters, 500);
   
   filterForm.addEventListener('input', (event) => {
     const target = event.target;
