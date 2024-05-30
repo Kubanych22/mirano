@@ -2,8 +2,6 @@ import { productStore } from "./Store";
 
 export const API_URL = 'https://outgoing-strong-nail.glitch.me';
 // export const API_URL = "https://mirano-api-9k3t.onrender.com";
-// export const API_URL = 'https://outgoing-strong-nail.glitch.me';
-
 // export const API_URL = 'http://localhost:3000';
 
 const formatQueryString = (params) => {
