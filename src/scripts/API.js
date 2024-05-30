@@ -1,4 +1,3 @@
-import { productStore } from "./Store";
 
 export const API_URL = 'https://outgoing-strong-nail.glitch.me';
 // export const API_URL = "https://mirano-api-9k3t.onrender.com";
@@ -28,8 +27,8 @@ export const fetchProducts = async (params = {}) => {
     }
 
     const products = await response.json();
-
-    productStore.setProducts(products);
+    return products;
+    
   } catch (error) {
     console.error(`Ошибка при получении данных: ${error}`);
     return [];

@@ -1,7 +1,9 @@
 import { defineConfig } from "vite";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import postcssConfig from './postcss.config';
 
 export default defineConfig({
+  base: './',
   esbuild: {
     jsxFactory: 'jsx',
     jsxInject: "import jsx from '@/jsx.js'"
@@ -10,6 +12,9 @@ export default defineConfig({
     alias: {
       "@": "/src",
     },
+  },
+  css: {
+    postcss: postcssConfig,
   },
   plugins: [
     ViteImageOptimizer({
